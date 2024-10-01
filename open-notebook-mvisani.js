@@ -8,7 +8,7 @@ module.exports = {
             // This example sets a prefix of 'planning', and then adds a date
             // hierarchy using the luxon module.
             return {
-                name: "open-notebook.dbgi.mvisani." + luxon.DateTime.local().toFormat("yyyy.MM.dd"),
+                name: "open-notebook." + luxon.DateTime.local().toFormat("yyyy.MM.dd"),
                 promptUserForModification: true,
             };
         },
@@ -26,7 +26,7 @@ module.exports = {
          * Dendron workspace.
          */
         setTemplate: () => {
-            return "templates.open-notebook.dbgi.mvisani";
+            return "templates.open-notebook";
         },
     },
 };
