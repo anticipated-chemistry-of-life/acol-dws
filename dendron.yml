@@ -22,10 +22,9 @@ commands:
     templateHierarchy: template
 workspace:
     vaults:
-        -
-            fsPath: .
-            selfContained: true
-            name: acol-dws
+        - fsPath: .
+          selfContained: true
+          name: acol-dws
     journal:
         dailyDomain: daily
         name: journal
@@ -40,7 +39,7 @@ workspace:
         dateFormat: y.MM.dd
         addBehavior: asOwnDomain
         statusSymbols:
-            '': ' '
+            "": " "
             wip: w
             done: x
             assigned: a
@@ -48,7 +47,7 @@ workspace:
             blocked: b
             delegated: l
             dropped: d
-            pending: 'y'
+            pending: "y"
         taskCompleteStatus:
             - done
             - x
@@ -92,17 +91,26 @@ publishing:
     writeStubs: false
     siteRootDir: docs
     seo:
-        title: Dendron
-        description: Personal Knowledge Space
+        title: Anticipated Chemistry of Life
+        description: Open Notebook Science in the Anticipated Chemistry of Life project
     github:
         enableEditLink: true
-        editLinkText: Edit this page on GitHub
+        editLinkText: Participate and click here to edit this page on Github !
         editBranch: main
         editViewMode: tree
+        editRepository: https://github.com/anticipated-chemistry-of-life/acol-dws
     enableSiteLastModified: true
     enableFrontmatterTags: true
     enableHashesForFMTags: false
     enableRandomlyColoredTags: true
     enableTaskNotes: true
     enablePrettyLinks: true
-    searchMode: search
+    searchMode: lookup
+    enableMermaid: true
+    enableHierarchyDisplay: true
+    assetsPrefix: /dendron-dbgi
+    siteUrl: https://anticipated-chemistry-of-life.github.io
+    duplicateNoteBehavior:
+        action: useVault
+        payload:
+            - vault
