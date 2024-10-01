@@ -71,7 +71,6 @@ workspace:
     maxPreviewsCached: 10
     maxNoteLength: 204800
     enableFullHierarchyNoteTitle: false
-    enablePersistentHistory: false
 preview:
     enableFMTitle: true
     enableNoteTitleForLink: true
@@ -91,26 +90,21 @@ publishing:
     writeStubs: false
     siteRootDir: docs
     seo:
-        title: Anticipated Chemistry of Life
-        description: Open Notebook Science in the Anticipated Chemistry of Life project
+        title: Dendron
+        description: Personal Knowledge Space
     github:
         enableEditLink: true
-        editLinkText: Participate and click here to edit this page on Github !
+        editLinkText: Feel free to participate and click here to edit this page on Github !
         editBranch: main
         editViewMode: tree
         editRepository: https://github.com/anticipated-chemistry-of-life/acol-dws
+
     enableSiteLastModified: true
     enableFrontmatterTags: true
     enableHashesForFMTags: false
     enableRandomlyColoredTags: true
     enableTaskNotes: true
     enablePrettyLinks: true
-    searchMode: lookup
-    enableMermaid: true
-    enableHierarchyDisplay: true
-    assetsPrefix: /dendron-dbgi
+    searchMode: search
     siteUrl: https://anticipated-chemistry-of-life.github.io
-    duplicateNoteBehavior:
-        action: useVault
-        payload:
-            - vault
+    assetsPrefix: /acol-dws
