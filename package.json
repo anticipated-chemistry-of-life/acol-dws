@@ -1,7 +1,6 @@
 {
   "name": "acol-dws",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +18,6 @@
   "homepage": "https://github.com/anticipated-chemistry-of-life/acol-dws#readme",
   "dependencies": {
     "@dendronhq/dendron-cli": "^0.124.2"
-  }
+  },
+  "description": ""
 }
