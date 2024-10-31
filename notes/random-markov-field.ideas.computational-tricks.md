@@ -2,13 +2,11 @@
 id: hnirbtrbjzu4siyt8hq7zl6
 title: Computational Tricks
 desc: ''
-updated: 1730359253416
+updated: 1730360935301
 created: 1730356961682
 traitIds:
   - open-notebook-mvisani
 ---
-
-# Random Markov Field
 
 ## Computational tricks 
 ### Discretization of branch lengths
