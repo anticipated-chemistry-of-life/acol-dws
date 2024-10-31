@@ -1,6 +1,6 @@
 ---
 id: hnirbtrbjzu4siyt8hq7zl6
-title: random-markov-field-ideas
+title: Computational Tricks
 desc: ''
 updated: 1730359253416
 created: 1730356961682
