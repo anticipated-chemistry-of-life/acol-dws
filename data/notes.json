@@ -1,0 +1,763 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461470,
+      "created": 1730464461470,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "3rbfqqbp7pwbkdcrgc97u7l": {
+      "id": "3rbfqqbp7pwbkdcrgc97u7l",
+      "title": "Anticipated Chemistry of Life",
+      "desc": "",
+      "updated": 1727785927929,
+      "created": 1671985562294,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "f1947bd87c177e8ee5739c542c5dc574",
+      "links": [],
+      "anchors": {
+        "welcome-to-the-dendron-of-the-anticipated-chemistry-of-life": {
+          "type": "header",
+          "text": "Welcome to the Dendron of the Anticipated Chemistry of Life",
+          "value": "welcome-to-the-dendron-of-the-anticipated-chemistry-of-life",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "l03fwlci5f5rdpot3v7oli6",
+        "u3cat2tknurvadfexnw227r",
+        "mwe6qbvok1ygy2hoebxeo0j",
+        "cqtu04fu6fq5qh24fxnqxcp"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "cqtu04fu6fq5qh24fxnqxcp": {
+      "fname": "open-notebook",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461254,
+      "created": 1730464461254,
+      "id": "cqtu04fu6fq5qh24fxnqxcp",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "fyq1vxz8fid03qqkllh3y8e"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Open Notebook"
+    },
+    "fyq1vxz8fid03qqkllh3y8e": {
+      "fname": "open-notebook.2024",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461255,
+      "created": 1730464461255,
+      "id": "fyq1vxz8fid03qqkllh3y8e",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "z3iwx72t7wvt7dakbrac4xb"
+      ],
+      "parent": "cqtu04fu6fq5qh24fxnqxcp",
+      "data": {},
+      "title": "2024"
+    },
+    "z3iwx72t7wvt7dakbrac4xb": {
+      "fname": "open-notebook.2024.10",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461255,
+      "created": 1730464461255,
+      "id": "z3iwx72t7wvt7dakbrac4xb",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "5id34hm0ryz4pxao6y6g66f",
+        "suddbhwk7cqxg76m5c0gumj",
+        "dwyyydw69ivyq9dq9iawtql",
+        "a3aygyjlxham4yh44m6d0xr"
+      ],
+      "parent": "fyq1vxz8fid03qqkllh3y8e",
+      "data": {},
+      "title": "10"
+    },
+    "a3aygyjlxham4yh44m6d0xr": {
+      "id": "a3aygyjlxham4yh44m6d0xr",
+      "title": "2024-10-summary",
+      "desc": "",
+      "updated": 1730464372633,
+      "created": 1730448238478,
+      "traitIds": [
+        "open-notebook-mvisani"
+      ],
+      "custom": {},
+      "fname": "open-notebook.2024.10.summary",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "9d6730e7bef37a0668a28341b76fedfc",
+      "links": [],
+      "anchors": {
+        "summary-of-october-2024": {
+          "type": "header",
+          "text": "Summary of October 2024",
+          "value": "summary-of-october-2024",
+          "line": 10,
+          "column": 0,
+          "depth": 1
+        },
+        "start-of-the-thesis": {
+          "type": "header",
+          "text": "Start of the thesis",
+          "value": "start-of-the-thesis",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "random-markov-field": {
+          "type": "header",
+          "text": "Random Markov Field",
+          "value": "random-markov-field",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "z-dimension": {
+          "type": "header",
+          "text": "Z dimension",
+          "value": "z-dimension",
+          "line": 26,
+          "column": 0,
+          "depth": 3
+        },
+        "ms2-compound-or-compound-to-ms2": {
+          "type": "header",
+          "text": "MS2 compound or compound to MS2",
+          "value": "ms2-compound-or-compound-to-ms2",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        },
+        "rdkit-rust": {
+          "type": "header",
+          "text": "RDKit Rust",
+          "value": "rdkit-rust",
+          "line": 35,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "z3iwx72t7wvt7dakbrac4xb",
+      "data": {}
+    },
+    "dwyyydw69ivyq9dq9iawtql": {
+      "id": "dwyyydw69ivyq9dq9iawtql",
+      "title": "2024-10-14",
+      "desc": "",
+      "updated": 1728970884567,
+      "created": 1728912731843,
+      "traitIds": [
+        "open-notebook-mvisani"
+      ],
+      "custom": {},
+      "fname": "open-notebook.2024.10.14",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "276b29c80e61de9e9f6331f9edea6171",
+      "links": [],
+      "anchors": {
+        "this-is-marcos-daily-open-notebook": {
+          "type": "header",
+          "text": "This is Marco's daily open-notebook.",
+          "value": "this-is-marcos-daily-open-notebook",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        },
+        "meeting-with-madleina": {
+          "type": "header",
+          "text": "Meeting with Madleina",
+          "value": "meeting-with-madleina",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 80,
+          "column": 0,
+          "depth": 2
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 83,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 86,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow": {
+          "type": "header",
+          "text": "Todo tomorrow",
+          "value": "todo-tomorrow",
+          "line": 90,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "z3iwx72t7wvt7dakbrac4xb",
+      "data": {}
+    },
+    "suddbhwk7cqxg76m5c0gumj": {
+      "id": "suddbhwk7cqxg76m5c0gumj",
+      "title": "2024-10-10",
+      "desc": "",
+      "updated": 1728564801104,
+      "created": 1728549399053,
+      "traitIds": [
+        "open-notebook-mvisani"
+      ],
+      "custom": {},
+      "fname": "open-notebook.2024.10.10",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "8190f139fc7fd0ab83998ca35b4728c9",
+      "links": [],
+      "anchors": {
+        "this-is-marcos-daily-open-notebook": {
+          "type": "header",
+          "text": "This is Marco's daily open-notebook.",
+          "value": "this-is-marcos-daily-open-notebook",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        },
+        "meeting-with-madleina": {
+          "type": "header",
+          "text": "Meeting with Madleina",
+          "value": "meeting-with-madleina",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow": {
+          "type": "header",
+          "text": "Todo tomorrow",
+          "value": "todo-tomorrow",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "z3iwx72t7wvt7dakbrac4xb",
+      "data": {}
+    },
+    "5id34hm0ryz4pxao6y6g66f": {
+      "id": "5id34hm0ryz4pxao6y6g66f",
+      "title": "2024-10-01",
+      "desc": "",
+      "updated": 1727786275335,
+      "created": 1727785957553,
+      "traitIds": [
+        "open-notebook-mvisani"
+      ],
+      "custom": {},
+      "fname": "open-notebook.2024.10.01",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "e37a8658e34751bb3081bb20fa543581",
+      "links": [],
+      "anchors": {
+        "this-is-marcos-daily-open-notebook": {
+          "type": "header",
+          "text": "This is Marco's daily open-notebook.",
+          "value": "this-is-marcos-daily-open-notebook",
+          "line": 9,
+          "column": 0,
+          "depth": 1
+        },
+        "first-day-of-phd": {
+          "type": "header",
+          "text": "First day of PhD",
+          "value": "first-day-of-phd",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 16,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow": {
+          "type": "header",
+          "text": "Todo tomorrow",
+          "value": "todo-tomorrow",
+          "line": 35,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "z3iwx72t7wvt7dakbrac4xb",
+      "data": {}
+    },
+    "mwe6qbvok1ygy2hoebxeo0j": {
+      "fname": "random-markov-field",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461253,
+      "created": 1730464461253,
+      "id": "mwe6qbvok1ygy2hoebxeo0j",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "l166gtpb0k3hv4vqv01vx60"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Random Markov Field"
+    },
+    "l166gtpb0k3hv4vqv01vx60": {
+      "fname": "random-markov-field.ideas",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461254,
+      "created": 1730464461254,
+      "id": "l166gtpb0k3hv4vqv01vx60",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "hnirbtrbjzu4siyt8hq7zl6"
+      ],
+      "parent": "mwe6qbvok1ygy2hoebxeo0j",
+      "data": {},
+      "title": "Ideas"
+    },
+    "hnirbtrbjzu4siyt8hq7zl6": {
+      "id": "hnirbtrbjzu4siyt8hq7zl6",
+      "title": "Computational Tricks",
+      "desc": "",
+      "updated": 1730362681314,
+      "created": 1730356961682,
+      "traitIds": [
+        "open-notebook-mvisani"
+      ],
+      "custom": {},
+      "fname": "random-markov-field.ideas.computational-tricks",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "d097425411e51a1e34ac33b9f6dd26a8",
+      "links": [],
+      "anchors": {
+        "computational-tricks": {
+          "type": "header",
+          "text": "Computational tricks",
+          "value": "computational-tricks",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "discretization-of-branch-lengths": {
+          "type": "header",
+          "text": "Discretization of branch lengths",
+          "value": "discretization-of-branch-lengths",
+          "line": 11,
+          "column": 0,
+          "depth": 3
+        },
+        "discretization-of-rate-parameters": {
+          "type": "header",
+          "text": "Discretization of rate parameters",
+          "value": "discretization-of-rate-parameters",
+          "line": 49,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "l166gtpb0k3hv4vqv01vx60",
+      "data": {}
+    },
+    "u3cat2tknurvadfexnw227r": {
+      "fname": "templates",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1730464461252,
+      "created": 1730464461252,
+      "id": "u3cat2tknurvadfexnw227r",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "mz59v1zr7grqghkinjmk034"
+      ],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {},
+      "title": "Templates"
+    },
+    "mz59v1zr7grqghkinjmk034": {
+      "id": "mz59v1zr7grqghkinjmk034",
+      "title": "Open Notebook",
+      "desc": "",
+      "updated": 1719324421258,
+      "created": 1675937670620,
+      "custom": {},
+      "fname": "templates.open-notebook",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "9fafbb225be85eed54b67f50511b48b6",
+      "links": [],
+      "anchors": {
+        "this-is-marcos-daily-open-notebook": {
+          "type": "header",
+          "text": "This is Marco's daily open-notebook.",
+          "value": "this-is-marcos-daily-open-notebook",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "notes": {
+          "type": "header",
+          "text": "Notes",
+          "value": "notes",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-today": {
+          "type": "header",
+          "text": "Todo today",
+          "value": "todo-today",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "doing": {
+          "type": "header",
+          "text": "Doing",
+          "value": "doing",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "done": {
+          "type": "header",
+          "text": "Done",
+          "value": "done",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "todo-tomorrow": {
+          "type": "header",
+          "text": "Todo tomorrow",
+          "value": "todo-tomorrow",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "u3cat2tknurvadfexnw227r",
+      "data": {}
+    },
+    "l03fwlci5f5rdpot3v7oli6": {
+      "id": "l03fwlci5f5rdpot3v7oli6",
+      "title": "Dendron",
+      "desc": "",
+      "updated": 1671987314401,
+      "created": 1671987274473,
+      "custom": {},
+      "fname": "dendron",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "95a7bd113bafc75c2115229e9360ca36",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "text": "Welcome to Dendron",
+          "value": "welcome-to-dendron",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "lookup": {
+          "type": "header",
+          "text": "Lookup",
+          "value": "lookup",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "3rbfqqbp7pwbkdcrgc97u7l",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "3rbfqqbp7pwbkdcrgc97u7l",
+      "title": "Anticipated Chemistry of Life",
+      "desc": "",
+      "updated": 1727785927929,
+      "created": 1671985562294,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "acol-dws"
+      },
+      "contentHash": "f1947bd87c177e8ee5739c542c5dc574",
+      "links": [],
+      "anchors": {
+        "welcome-to-the-dendron-of-the-anticipated-chemistry-of-life": {
+          "type": "header",
+          "text": "Welcome to the Dendron of the Anticipated Chemistry of Life",
+          "value": "welcome-to-the-dendron-of-the-anticipated-chemistry-of-life",
+          "line": 8,
+          "column": 0,
+          "depth": 1
+        }
+      },
+      "children": [
+        "l03fwlci5f5rdpot3v7oli6",
+        "u3cat2tknurvadfexnw227r",
+        "mwe6qbvok1ygy2hoebxeo0j",
+        "cqtu04fu6fq5qh24fxnqxcp"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "\n# Welcome to the Dendron of the Anticipated Chemistry of Life\n\nThis dendron has the purpose to serve as a laboratory notebook for my PhD thesis. It will contain all the notes that I will take during my research as well as some results of the experiments and models that I will develop and test.\n"
+    }
+  ],
+  "noteIndex": {
+    "id": "3rbfqqbp7pwbkdcrgc97u7l",
+    "title": "Anticipated Chemistry of Life",
+    "desc": "",
+    "updated": 1727785927929,
+    "created": 1671985562294,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "acol-dws"
+    },
+    "contentHash": "f1947bd87c177e8ee5739c542c5dc574",
+    "links": [],
+    "anchors": {
+      "welcome-to-the-dendron-of-the-anticipated-chemistry-of-life": {
+        "type": "header",
+        "text": "Welcome to the Dendron of the Anticipated Chemistry of Life",
+        "value": "welcome-to-the-dendron-of-the-anticipated-chemistry-of-life",
+        "line": 8,
+        "column": 0,
+        "depth": 1
+      }
+    },
+    "children": [
+      "l03fwlci5f5rdpot3v7oli6",
+      "u3cat2tknurvadfexnw227r",
+      "mwe6qbvok1ygy2hoebxeo0j",
+      "cqtu04fu6fq5qh24fxnqxcp"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "\n# Welcome to the Dendron of the Anticipated Chemistry of Life\n\nThis dendron has the purpose to serve as a laboratory notebook for my PhD thesis. It will contain all the notes that I will take during my research as well as some results of the experiments and models that I will develop and test.\n"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "acol-dws"
+    }
+  ]
+}

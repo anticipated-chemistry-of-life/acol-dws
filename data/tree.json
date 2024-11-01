@@ -1,0 +1,144 @@
+{
+  "roots": [
+    {
+      "key": "l03fwlci5f5rdpot3v7oli6",
+      "title": "Dendron",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": []
+    },
+    {
+      "key": "cqtu04fu6fq5qh24fxnqxcp",
+      "title": "Open Notebook",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": [
+        {
+          "key": "fyq1vxz8fid03qqkllh3y8e",
+          "title": "2024",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "z3iwx72t7wvt7dakbrac4xb",
+              "title": "10",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "5id34hm0ryz4pxao6y6g66f",
+                  "title": "2024-10-01",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "suddbhwk7cqxg76m5c0gumj",
+                  "title": "2024-10-10",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "dwyyydw69ivyq9dq9iawtql",
+                  "title": "2024-10-14",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "a3aygyjlxham4yh44m6d0xr",
+                  "title": "2024-10-summary",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mwe6qbvok1ygy2hoebxeo0j",
+      "title": "Random Markov Field",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": [
+        {
+          "key": "l166gtpb0k3hv4vqv01vx60",
+          "title": "Ideas",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "hnirbtrbjzu4siyt8hq7zl6",
+              "title": "Computational Tricks",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "u3cat2tknurvadfexnw227r",
+      "title": "Templates",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": [
+        {
+          "key": "mz59v1zr7grqghkinjmk034",
+          "title": "Open Notebook",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "l03fwlci5f5rdpot3v7oli6": null,
+    "cqtu04fu6fq5qh24fxnqxcp": null,
+    "fyq1vxz8fid03qqkllh3y8e": "cqtu04fu6fq5qh24fxnqxcp",
+    "z3iwx72t7wvt7dakbrac4xb": "fyq1vxz8fid03qqkllh3y8e",
+    "5id34hm0ryz4pxao6y6g66f": "z3iwx72t7wvt7dakbrac4xb",
+    "suddbhwk7cqxg76m5c0gumj": "z3iwx72t7wvt7dakbrac4xb",
+    "dwyyydw69ivyq9dq9iawtql": "z3iwx72t7wvt7dakbrac4xb",
+    "a3aygyjlxham4yh44m6d0xr": "z3iwx72t7wvt7dakbrac4xb",
+    "mwe6qbvok1ygy2hoebxeo0j": null,
+    "l166gtpb0k3hv4vqv01vx60": "mwe6qbvok1ygy2hoebxeo0j",
+    "hnirbtrbjzu4siyt8hq7zl6": "l166gtpb0k3hv4vqv01vx60",
+    "u3cat2tknurvadfexnw227r": null,
+    "mz59v1zr7grqghkinjmk034": "u3cat2tknurvadfexnw227r"
+  },
+  "notesLabelById": {
+    "l03fwlci5f5rdpot3v7oli6": "Dendron",
+    "cqtu04fu6fq5qh24fxnqxcp": "Open Notebook",
+    "fyq1vxz8fid03qqkllh3y8e": "2024",
+    "z3iwx72t7wvt7dakbrac4xb": "10",
+    "5id34hm0ryz4pxao6y6g66f": "2024-10-01",
+    "suddbhwk7cqxg76m5c0gumj": "2024-10-10",
+    "dwyyydw69ivyq9dq9iawtql": "2024-10-14",
+    "a3aygyjlxham4yh44m6d0xr": "2024-10-summary",
+    "mwe6qbvok1ygy2hoebxeo0j": "Random Markov Field",
+    "l166gtpb0k3hv4vqv01vx60": "Ideas",
+    "hnirbtrbjzu4siyt8hq7zl6": "Computational Tricks",
+    "u3cat2tknurvadfexnw227r": "Templates",
+    "mz59v1zr7grqghkinjmk034": "Open Notebook"
+  }
+}
