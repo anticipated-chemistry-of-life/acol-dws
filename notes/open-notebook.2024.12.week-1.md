@@ -1,8 +1,8 @@
 ---
 id: 5yljtemxrh689wjdzhhme3y
-title: 2024-12-week-1
+title: Week 1
 desc: ''
-updated: 1733490328529
+updated: 1734089459569
 created: 1733489699006
 traitIds:
   - open-notebook-mvisani
