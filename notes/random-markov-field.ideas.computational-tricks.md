@@ -2,7 +2,7 @@
 id: hnirbtrbjzu4siyt8hq7zl6
 title: Computational Tricks
 desc: ''
-updated: 1730362681314
+updated: 1742217068475
 created: 1730356961682
 traitIds:
   - open-notebook-mvisani
