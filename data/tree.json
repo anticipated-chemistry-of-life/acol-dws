@@ -1,0 +1,372 @@
+{
+  "roots": [
+    {
+      "key": "l03fwlci5f5rdpot3v7oli6",
+      "title": "Dendron",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": []
+    },
+    {
+      "key": "1nhi8dkhm4thguahda55jg9",
+      "title": "Open Notebook",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": [
+        {
+          "key": "56n47xkbwzrnmpmyy1hhakv",
+          "title": "2024",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "om1u2hw77yt1fq6ve5cld90",
+              "title": "10",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "5id34hm0ryz4pxao6y6g66f",
+                  "title": "2024-10-01",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "suddbhwk7cqxg76m5c0gumj",
+                  "title": "2024-10-10",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "dwyyydw69ivyq9dq9iawtql",
+                  "title": "2024-10-14",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "a3aygyjlxham4yh44m6d0xr",
+                  "title": "2024-10-summary",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "m2xqkjn2vjtsvikl4lxyt0t",
+              "title": "11",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "sin6pa9afg1ycslrubne6s0",
+                  "title": "2024-11-28",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "lvgj66fs917yh7i0vs29y42",
+                  "title": "Week 1",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "a2zi7mpypgnvdl4psnueqeg",
+                  "title": "Week 2",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "fc2jt1itreqaspkcig68iv6",
+                  "title": "Week 3",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "2fgrq6mwcqwzyhq8ygka2oi",
+              "title": "12",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "5yljtemxrh689wjdzhhme3y",
+                  "title": "Week 1",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "zih4zczq4g275rtff779xzu",
+          "title": "2025",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "cj0rs10zbp46xzd289nkfst",
+              "title": "01",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "w82no3l0863xm6txi0zup7l",
+                  "title": "Week 3",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "b2w9qle4hfuy3a8ku0bpkn1",
+              "title": "02",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "msk2qoahg6mudjmtyqol4pf",
+                  "title": "2025-02-04",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "0r601tk8xp7pv0o2famxi5i",
+                  "title": "2025-02-10",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "yut4q3wigs14zy2hguk3q2p",
+                  "title": "Week 1",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                },
+                {
+                  "key": "tqtgu1ry1m79n9d4ft3w4jj",
+                  "title": "Week 3",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "i1nd98rpz5f4hwtsjxtz6df",
+              "title": "03",
+              "icon": "plusOutlined",
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": [
+                {
+                  "key": "3htliouvfy87p01oxlg2ax4",
+                  "title": "Week 3",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "acol-dws",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "prtr7thbm988kijzy8eut73",
+      "title": "Random Markov Field",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": [
+        {
+          "key": "vuq83x4r510o1fp970qf2zp",
+          "title": "Examples",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "8y4px905mlw06q0nobnid9b",
+              "title": "update-Z",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "arbr6y129ioioq8gph0h1x1",
+          "title": "Ideas",
+          "icon": "plusOutlined",
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "hnirbtrbjzu4siyt8hq7zl6",
+              "title": "Computational Tricks",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": []
+            }
+          ]
+        },
+        {
+          "key": "ufdb3a64xjinl5jopn58g8q",
+          "title": "Model Validation",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": [
+            {
+              "key": "4b0y1e6odnucg6b7t8i9450",
+              "title": "Parameter Estimation",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "acol-dws",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "zxc3pre92d542wg70hmdhgl",
+      "title": "references",
+      "icon": null,
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": []
+    },
+    {
+      "key": "gstdvri2bvbjyljn3p2ukcm",
+      "title": "Templates",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "acol-dws",
+      "children": [
+        {
+          "key": "mz59v1zr7grqghkinjmk034",
+          "title": "Open Notebook",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "acol-dws",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "l03fwlci5f5rdpot3v7oli6": null,
+    "1nhi8dkhm4thguahda55jg9": null,
+    "56n47xkbwzrnmpmyy1hhakv": "1nhi8dkhm4thguahda55jg9",
+    "om1u2hw77yt1fq6ve5cld90": "56n47xkbwzrnmpmyy1hhakv",
+    "5id34hm0ryz4pxao6y6g66f": "om1u2hw77yt1fq6ve5cld90",
+    "suddbhwk7cqxg76m5c0gumj": "om1u2hw77yt1fq6ve5cld90",
+    "dwyyydw69ivyq9dq9iawtql": "om1u2hw77yt1fq6ve5cld90",
+    "a3aygyjlxham4yh44m6d0xr": "om1u2hw77yt1fq6ve5cld90",
+    "m2xqkjn2vjtsvikl4lxyt0t": "56n47xkbwzrnmpmyy1hhakv",
+    "sin6pa9afg1ycslrubne6s0": "m2xqkjn2vjtsvikl4lxyt0t",
+    "lvgj66fs917yh7i0vs29y42": "m2xqkjn2vjtsvikl4lxyt0t",
+    "a2zi7mpypgnvdl4psnueqeg": "m2xqkjn2vjtsvikl4lxyt0t",
+    "fc2jt1itreqaspkcig68iv6": "m2xqkjn2vjtsvikl4lxyt0t",
+    "2fgrq6mwcqwzyhq8ygka2oi": "56n47xkbwzrnmpmyy1hhakv",
+    "5yljtemxrh689wjdzhhme3y": "2fgrq6mwcqwzyhq8ygka2oi",
+    "zih4zczq4g275rtff779xzu": "1nhi8dkhm4thguahda55jg9",
+    "cj0rs10zbp46xzd289nkfst": "zih4zczq4g275rtff779xzu",
+    "w82no3l0863xm6txi0zup7l": "cj0rs10zbp46xzd289nkfst",
+    "b2w9qle4hfuy3a8ku0bpkn1": "zih4zczq4g275rtff779xzu",
+    "msk2qoahg6mudjmtyqol4pf": "b2w9qle4hfuy3a8ku0bpkn1",
+    "0r601tk8xp7pv0o2famxi5i": "b2w9qle4hfuy3a8ku0bpkn1",
+    "yut4q3wigs14zy2hguk3q2p": "b2w9qle4hfuy3a8ku0bpkn1",
+    "tqtgu1ry1m79n9d4ft3w4jj": "b2w9qle4hfuy3a8ku0bpkn1",
+    "i1nd98rpz5f4hwtsjxtz6df": "zih4zczq4g275rtff779xzu",
+    "3htliouvfy87p01oxlg2ax4": "i1nd98rpz5f4hwtsjxtz6df",
+    "prtr7thbm988kijzy8eut73": null,
+    "vuq83x4r510o1fp970qf2zp": "prtr7thbm988kijzy8eut73",
+    "8y4px905mlw06q0nobnid9b": "vuq83x4r510o1fp970qf2zp",
+    "arbr6y129ioioq8gph0h1x1": "prtr7thbm988kijzy8eut73",
+    "hnirbtrbjzu4siyt8hq7zl6": "arbr6y129ioioq8gph0h1x1",
+    "ufdb3a64xjinl5jopn58g8q": "prtr7thbm988kijzy8eut73",
+    "4b0y1e6odnucg6b7t8i9450": "ufdb3a64xjinl5jopn58g8q",
+    "zxc3pre92d542wg70hmdhgl": null,
+    "gstdvri2bvbjyljn3p2ukcm": null,
+    "mz59v1zr7grqghkinjmk034": "gstdvri2bvbjyljn3p2ukcm"
+  },
+  "notesLabelById": {
+    "l03fwlci5f5rdpot3v7oli6": "Dendron",
+    "1nhi8dkhm4thguahda55jg9": "Open Notebook",
+    "56n47xkbwzrnmpmyy1hhakv": "2024",
+    "om1u2hw77yt1fq6ve5cld90": "10",
+    "5id34hm0ryz4pxao6y6g66f": "2024-10-01",
+    "suddbhwk7cqxg76m5c0gumj": "2024-10-10",
+    "dwyyydw69ivyq9dq9iawtql": "2024-10-14",
+    "a3aygyjlxham4yh44m6d0xr": "2024-10-summary",
+    "m2xqkjn2vjtsvikl4lxyt0t": "11",
+    "sin6pa9afg1ycslrubne6s0": "2024-11-28",
+    "lvgj66fs917yh7i0vs29y42": "Week 1",
+    "a2zi7mpypgnvdl4psnueqeg": "Week 2",
+    "fc2jt1itreqaspkcig68iv6": "Week 3",
+    "2fgrq6mwcqwzyhq8ygka2oi": "12",
+    "5yljtemxrh689wjdzhhme3y": "Week 1",
+    "zih4zczq4g275rtff779xzu": "2025",
+    "cj0rs10zbp46xzd289nkfst": "01",
+    "w82no3l0863xm6txi0zup7l": "Week 3",
+    "b2w9qle4hfuy3a8ku0bpkn1": "02",
+    "msk2qoahg6mudjmtyqol4pf": "2025-02-04",
+    "0r601tk8xp7pv0o2famxi5i": "2025-02-10",
+    "yut4q3wigs14zy2hguk3q2p": "Week 1",
+    "tqtgu1ry1m79n9d4ft3w4jj": "Week 3",
+    "i1nd98rpz5f4hwtsjxtz6df": "03",
+    "3htliouvfy87p01oxlg2ax4": "Week 3",
+    "prtr7thbm988kijzy8eut73": "Random Markov Field",
+    "vuq83x4r510o1fp970qf2zp": "Examples",
+    "8y4px905mlw06q0nobnid9b": "update-Z",
+    "arbr6y129ioioq8gph0h1x1": "Ideas",
+    "hnirbtrbjzu4siyt8hq7zl6": "Computational Tricks",
+    "ufdb3a64xjinl5jopn58g8q": "Model Validation",
+    "4b0y1e6odnucg6b7t8i9450": "Parameter Estimation",
+    "zxc3pre92d542wg70hmdhgl": "references",
+    "gstdvri2bvbjyljn3p2ukcm": "Templates",
+    "mz59v1zr7grqghkinjmk034": "Open Notebook"
+  }
+}
