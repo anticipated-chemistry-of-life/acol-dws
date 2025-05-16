@@ -2,14 +2,14 @@
 id: 4b0y1e6odnucg6b7t8i9450
 title: Parameter Estimation
 desc: ''
-updated: 1743177680847
+updated: 1743400704131
 created: 1743156887308
 ---
 
 Here we test if the parameters of the model can be estimated given the data.
 
 
-This was done in the `single_root` directory with the following parameters: 
+This was done in the [`single_root`](https://github.com/anticipated-chemistry-of-life/markov-random-field/tree/c15e5a1f1489f83610383347788aa063e8ccfede/model_validation/single_root) directory with the following parameters: 
 
 ```bash
 ../../build/acol simulate \
