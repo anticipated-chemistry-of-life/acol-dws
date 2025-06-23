@@ -2,7 +2,7 @@
 id: 53t47myclcykhmqkfwxqfzn
 title: Mass Spectrometry
 desc: ''
-updated: 1750337908573
+updated: 1750658884381
 created: 1750333636458
 ---
 
@@ -60,3 +60,7 @@ of that molecule. Then check if the two masses are present in the MS run.
 - Strongly depends on adduct selection
 
 ![](./assets/images/IMG_20250619_134816.jpg)
+
+## Questions for PMA : 
+- How do we infer the adduct when we have only a mass ?
+- Should we benchmark MetFrag ? Can we use MetFrag to benchmark LOTUS-MINES
