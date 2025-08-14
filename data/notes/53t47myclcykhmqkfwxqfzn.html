@@ -1,0 +1,52 @@
+<h1 id="mass-spectrometry">Mass Spectrometry<a aria-hidden="true" class="anchor-heading icon-link" href="#mass-spectrometry"></a></h1>
+<h1 id="how-should-we-include-mass-spectrometry-in-our-random-markov-field-">How should we include mass spectrometry in our random Markov field ?<a aria-hidden="true" class="anchor-heading icon-link" href="#how-should-we-include-mass-spectrometry-in-our-random-markov-field-"></a></h1>
+<p>On the 17th June 2025 we discussed with Dan and PMA some ideas on how we will implement the mass spec data in our model.
+Given that the LOTUS data is not sufficient to make predictions of occurrences, we need to take mass spec into account.</p>
+<p>The idea is that during the MCMC, the model will propose a set of molecules (a vector of <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></span> and <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span>) and compare it
+with the data. Then we accept or reject this proposal so on (classic Gibbs sampling and MCMC).</p>
+<p>We thought there are two main approaches to the problem.</p>
+<h2 id="use-post-annotation-data">Use post-annotation data<a aria-hidden="true" class="anchor-heading icon-link" href="#use-post-annotation-data"></a></h2>
+<p>This would include using MZMine/Sirius annotation pipelines to then have a list of molecules detected in a sample. </p>
+<h4 id="pros">Pros<a aria-hidden="true" class="anchor-heading icon-link" href="#pros"></a></h4>
+<p>Comparison is easy between the proposal vector and the data</p>
+<h4 id="cons">Cons<a aria-hidden="true" class="anchor-heading icon-link" href="#cons"></a></h4>
+<p>We rely on other tools that may output wrongly annotated data.</p>
+<h2 id="use-mass-spec-data-directly">Use mass spec data directly<a aria-hidden="true" class="anchor-heading icon-link" href="#use-mass-spec-data-directly"></a></h2>
+<p>There are many ways we could use mass spec data</p>
+<h3 id="artificial-spectra">Artificial spectra<a aria-hidden="true" class="anchor-heading icon-link" href="#artificial-spectra"></a></h3>
+<p>We could simulate a mass spectrum given a SMILES and compare it to a mass spec run. For
+each molecule that we have, we could have a similarity score to the closest spectrum in
+the MS run.
+<img src="/acol-dws/./assets/images/IMG_20250619_134804_1.jpg"></p>
+<h4 id="pros-1">Pros<a aria-hidden="true" class="anchor-heading icon-link" href="#pros-1"></a></h4>
+<ul>
+<li>There are many tools to simulate a mass spectrum</li>
+<li>There are many tools to calculate the similarity between two spectrums (Cosine, Dreams embedding, Entropy, etc...)</li>
+</ul>
+<h4 id="cons-1">Cons<a aria-hidden="true" class="anchor-heading icon-link" href="#cons-1"></a></h4>
+<ul>
+<li>The simulation tools are not very good due to the lack of training data.
+This would result in having some molecules with low probability even-though they are truly there (see ICEBERG-evaluation).</li>
+</ul>
+<h3 id="ms1">MS1<a aria-hidden="true" class="anchor-heading icon-link" href="#ms1"></a></h3>
+<p>An idea that came to mind was to directly use the MS1 scans of a mass spectrum. This allows to
+directly use the high resolution of the machine. The idea is the following: </p>
+<p>For each molecule in LOTUS, calculate its mass with hydrogen adduct. Then calculate the isotopic pattern
+of that molecule. Then check if the two masses are present in the MS run. </p>
+<h4 id="pros-2">Pros<a aria-hidden="true" class="anchor-heading icon-link" href="#pros-2"></a></h4>
+<ul>
+<li>Use the resolution of mass spec</li>
+<li>Can match to molecules that might not even have an MS2 spectrum (due to Top-N DDA).</li>
+</ul>
+<h4 id="cons-2">Cons<a aria-hidden="true" class="anchor-heading icon-link" href="#cons-2"></a></h4>
+<ul>
+<li>We can only work with <strong>molecular formulas</strong></li>
+<li>Probably high false positives rate</li>
+<li>Strongly depends on adduct selection</li>
+</ul>
+<p><img src="/acol-dws/./assets/images/IMG_20250619_134816.jpg"></p>
+<h2 id="questions-for-pma-">Questions for PMA :<a aria-hidden="true" class="anchor-heading icon-link" href="#questions-for-pma-"></a></h2>
+<ul>
+<li>How do we infer the adduct when we have only a mass ?</li>
+<li>Should we benchmark MetFrag ? Can we use MetFrag to benchmark LOTUS-MINES</li>
+</ul>

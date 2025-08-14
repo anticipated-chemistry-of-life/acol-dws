@@ -1,0 +1,24 @@
+<h1 id="2024-10-summary">2024-10-summary<a aria-hidden="true" class="anchor-heading icon-link" href="#2024-10-summary"></a></h1>
+<h1 id="summary-of-october-2024">Summary of October 2024<a aria-hidden="true" class="anchor-heading icon-link" href="#summary-of-october-2024"></a></h1>
+<h2 id="start-of-the-thesis">Start of the thesis<a aria-hidden="true" class="anchor-heading icon-link" href="#start-of-the-thesis"></a></h2>
+<h2 id="random-markov-field">Random Markov Field<a aria-hidden="true" class="anchor-heading icon-link" href="#random-markov-field"></a></h2>
+<p>We started the implementation of the random markov field. The main discussion
+was how can we store all the data- that we need in a reasonable amount of memory. To do so we decided
+to use a uint64 vecore to store the data where each bit represents a different value of the class.
+The first 16 bits are used to store the counter of the MCMC, for counting how many times our combination
+(species-molecule) was a 1. The 17th bit is to store the actual state of the combination (if it is 1 or 0).
+The next 47 bits are used as index of the combination in the molecule and species vectors.</p>
+<p>We are now discussing if a vector is the best way to store the data or if we should use a hashmap
+(<code>std::unordered_map</code>).
+It seems like a vector with a "hinted" binary search could lead to extremely fast access to the data.</p>
+<h3 id="z-dimension">Z dimension<a aria-hidden="true" class="anchor-heading icon-link" href="#z-dimension"></a></h3>
+<p>For the Z dimension of the model, since we don't need to store the counter, we decided to go with a int32 where the
+value is the coordinate of the vector and the sign is the state of the combination.</p>
+<h2 id="ms2-compound-or-compound-to-ms2">MS2 compound or compound to MS2<a aria-hidden="true" class="anchor-heading icon-link" href="#ms2-compound-or-compound-to-ms2"></a></h2>
+<p>Luca has been working on different models to predict the classification of a molecule. He has also
+been working on the classification of MS2 spectra to chemical classifications. We would ideally try to develop
+a model that can predict a smiles or a chemical fingerprint given a MS2 spectrum.</p>
+<h2 id="rdkit-rust">RDKit Rust<a aria-hidden="true" class="anchor-heading icon-link" href="#rdkit-rust"></a></h2>
+<p>I am also working from time to time to create a binding beween C++ and Rust for the RDKit library. I am
+a bit in contact with the creators of the crate but they are not very responsive. MAybe I should
+fully develop my own fork.  </p>

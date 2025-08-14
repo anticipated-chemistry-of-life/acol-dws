@@ -1,0 +1,22 @@
+<h1 id="2025-07-week-3">2025-07-week-3<a aria-hidden="true" class="anchor-heading icon-link" href="#2025-07-week-3"></a></h1>
+<h1 id="this-is-marcos-daily-open-notebook">This is Marco's daily open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-marcos-daily-open-notebook"></a></h1>
+<p>Today is 2025.07.25</p>
+<h2 id="qcxms2">QCxMS2<a aria-hidden="true" class="anchor-heading icon-link" href="#qcxms2"></a></h2>
+<p>QCxMS2 is a tool to simulate mass spectra given a SMILES. This approach uses quantum chemistry calculations.
+I'd like to test it out to see how well the results are. However, the calculations are really heavy. </p>
+<p>I've been testing it out with the first molecule in MassSpecGym but am getting sometimes pretty good results and sometimes not.
+I still need to tune a bit the parameters to see what works.</p>
+<h2 id="emi-monorepo">EMI-Monorepo<a aria-hidden="true" class="anchor-heading icon-link" href="#emi-monorepo"></a></h2>
+<p>Went back to the monorepo with Luca. Currently, creating a crate that generates mermaid graphs automatically. This
+allows us to visualize better the structure of the database. </p>
+<h2 id="random-markov-field">Random Markov Field<a aria-hidden="true" class="anchor-heading icon-link" href="#random-markov-field"></a></h2>
+<p>As Dan said I should create a standard way to plot all the annotation tools tested (MetFrag, CFM-ID, Sirius). </p>
+<p>Turns out that Sirius is good for getting top 1 results but is the worst to find the total number of results. It tested by giving
+all the spectra present in MassSpecGym to Sirius and it ignored about half of them. </p>
+<h3 id="todo">TODO<a aria-hidden="true" class="anchor-heading icon-link" href="#todo"></a></h3>
+<p>Currently the update of Y is really slow if we start to have many nodes in our tree. What I would like to do is to
+change the code so that only if all threads ask for an update of the sheet, then the sheet will be updated. Currently we are not
+doing this. What we do is that we parallelize on the last internal loop. But that one is already quite fast so there might be a lot of overhead
+of the threads by doing so. </p>
+<p>What I want is to check if all threads are true, then do and update. </p>
+<p>To use :  <code>std::all_of</code> and <code>omp barrier</code> ?</p>

@@ -1,0 +1,44 @@
+<h1 id="parameter-estimation">Parameter Estimation<a aria-hidden="true" class="anchor-heading icon-link" href="#parameter-estimation"></a></h1>
+<p>Here we test if the parameters of the model can be estimated given the data.</p>
+<p>This was done in the <a href="https://github.com/anticipated-chemistry-of-life/markov-random-field/tree/c15e5a1f1489f83610383347788aa063e8ccfede/model_validation/single_root"><code>single_root</code></a> directory with the following parameters: </p>
+<pre class="language-bash"><code class="language-bash"><span class="token punctuation">..</span>/<span class="token punctuation">..</span>/build/acol simulate <span class="token punctuation">\</span>
+    --tree_species species.txt <span class="token punctuation">\</span>
+    --tree_molecules molecules.txt <span class="token punctuation">\</span>
+    --num_iterations <span class="token number">100000</span> <span class="token punctuation">\</span>
+    --species_branch_lengths acol_input_simulated.txt <span class="token punctuation">\</span>
+    --species_var_log_nu acol_input_simulated.txt <span class="token punctuation">\</span>
+    --species_mean_log_nu acol_input_simulated.txt <span class="token punctuation">\</span>
+    --species_log_nu acol_input_simulated.txt <span class="token punctuation">\</span>
+    --species_alpha acol_input_simulated.txt <span class="token punctuation">\</span>
+    --molecules_branch_lengths acol_input_simulated.txt <span class="token punctuation">\</span>
+    --molecules_var_log_nu acol_input_simulated.txt <span class="token punctuation">\</span>
+    --molecules_mean_log_nu acol_input_simulated.txt <span class="token punctuation">\</span>
+    --molecules_log_nu acol_input_simulated.txt <span class="token punctuation">\</span>
+    --molecules_alpha acol_input_simulated.txt <span class="token punctuation">\</span>
+    --numThreads <span class="token number">1</span> <span class="token punctuation">\</span>
+    --write_Y <span class="token punctuation">\</span>
+    --write_Z <span class="token punctuation">\</span>
+    --write_joint_log_prob_density <span class="token punctuation">\</span>
+    --write_Y_trace <span class="token punctuation">\</span>
+    --write_Z_trace <span class="token punctuation">\</span>
+    --fixedSeed <span class="token number">456284939</span> <span class="token punctuation">\</span>
+</code></pre>
+<h1 id="molecules">Molecules<a aria-hidden="true" class="anchor-heading icon-link" href="#molecules"></a></h1>
+<h2 id="molecules-alpha">Molecules <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">α</span></span></span></span></span><a aria-hidden="true" class="anchor-heading icon-link" href="#molecules-alpha"></a></h2>
+<p><img src="/acol-dws/./assets/images/20250328_molecules_alpha_2.png">
+<img src="/acol-dws/./assets/images/20250328_molecules_alpha_12.png"></p>
+<p><img src="/acol-dws/./assets/images/20250328_molecules_branch_7.png">
+<img src="/acol-dws/./assets/images/20250328_molecules_branch_35.png"></p>
+<p><img src="/acol-dws/./assets/images/20250328_molecules_log_nu_5.png">
+<img src="/acol-dws/./assets/images/20250328_molecules_log_nu_12.png"></p>
+<p><img src="/acol-dws/./assets/images/20250328_molecules_Z.png"></p>
+<h1 id="species">Species<a aria-hidden="true" class="anchor-heading icon-link" href="#species"></a></h1>
+<p><img src="/acol-dws/./assets/images/20250328_species_alpha_1.png">
+<img src="/acol-dws/./assets/images/20250328_species_alpha_32.png"></p>
+<p><img src="/acol-dws/./assets/images/20250328_species_branch_11.png">
+<img src="/acol-dws/./assets/images/20250328_species_branch_12.png"></p>
+<p><img src="/acol-dws/./assets/images/20250328_species_log_nu_1.png">
+<img src="/acol-dws/./assets/images/20250328_species_log_nu_36.png"></p>
+<p><img src="/acol-dws/./assets/images/20250328_species_Z.png"></p>
+<h1 id="and-finally-y">And finally Y<a aria-hidden="true" class="anchor-heading icon-link" href="#and-finally-y"></a></h1>
+<p><img src="/acol-dws/./assets/images/20250328_Y.png"></p>
