@@ -2,7 +2,7 @@
 id: 7g4bsn52f9rrkgj3i9vx5n8
 title: 2025-07-week-3
 desc: ''
-updated: 1753457140612
+updated: 1757918121154
 created: 1753435709124
 traitIds:
   - open-notebook-mvisani
@@ -27,14 +27,15 @@ allows us to visualize better the structure of the database.
 As Dan said I should create a standard way to plot all the annotation tools tested (MetFrag, CFM-ID, Sirius). 
 
 Turns out that Sirius is good for getting top 1 results but is the worst to find the total number of results. It tested by giving 
-all the spectra present in MassSpecGym to Sirius and it ignored about half of them. 
+all the spectra present in MassSpecGym to Sirius and it ignored about half of them. Turns out that Sirius
+needs also an input for the MS1 data which we don't have for MassSpecGym. 
 
 ### TODO
-Currently the update of Y is really slow if we start to have many nodes in our tree. What I would like to do is to
+~~Currently the update of Y is really slow if we start to have many nodes in our tree. What I would like to do is to
 change the code so that only if all threads ask for an update of the sheet, then the sheet will be updated. Currently we are not 
 doing this. What we do is that we parallelize on the last internal loop. But that one is already quite fast so there might be a lot of overhead 
-of the threads by doing so. 
+of the threads by doing so.~~ 
 
-What I want is to check if all threads are true, then do and update. 
+~~What I want is to check if all threads are true, then do and update.~~
 
-To use :  `std::all_of` and `omp barrier` ?
+~~To use :  `std::all_of` and `omp barrier` ?~~
