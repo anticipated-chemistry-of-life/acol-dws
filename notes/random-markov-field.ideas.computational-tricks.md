@@ -21,13 +21,8 @@ branch length is computationally prohibitive. To reduce the number of calculatio
 branch lengths to predefined values. Specifically, let there be a regularly spaced grid on the
 interval $[a, b]$ consisting of $K$ bins. The width of each bin is given by $\Delta = \frac{b-a}{K}$ Let us further define by $k(n) \in 0,..., K-1$ the bin the bin where node $n$ is assigned to. The transition matrix of the first three bins is given by:
 
-$$
-\begin{align}
-\mathbf{P}(0) &= \exp(\mathbf{\Lambda_c}a) \\
-\mathbf{P}(1) &= \exp(\mathbf{\Lambda_c}(a + \Delta)) \\
-\mathbf{P}(2) &= \exp(\mathbf{\Lambda_c}(a + 2\Delta)) \\
-\end{align}
-$$
+
+
 
 More generally, the transition matrix for bin $k$ is given by: 
 $$
