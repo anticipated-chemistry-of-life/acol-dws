@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/anticipated-chemistry-of-life/acol-dws#readme",
   "dependencies": {
-    "@dendronhq/dendron-cli": "^0.119.0"
+    "@dendronhq/dendron-cli": "^0.124.2"
   }
 }
