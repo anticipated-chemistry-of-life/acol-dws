@@ -2,7 +2,7 @@
 id: e2hatetd17sm2887n0q8xtd
 title: '2026-08-27'
 desc: ''
-updated: 1787902840423
+updated: 1787903283081
 created: 1787839812834
 traitIds:
   - open-notebook-mvisani
@@ -11,9 +11,8 @@ traitIds:
 
 ## Discussion with Daniel
 
-To use : `/wayfinder`
 Big refactoring ahead.
-- There should be a pure abstract class for both Y and Z such that we can use any implementation we want (I've already started on the Y one). 
+- There should be a pure abstract class for both Y and Z such that we can use any implementation we want (I've already started on the Y one which is now stashed). 
 - Right now I should implement both a fully dense matrix for Y and Z. Y should contain a `std::vector<uint16_t>` in order to store the state and the counter. The Z matrices should contain a `std::vector<uint8_t>` in order to store the state only.
 - We also want to change a bit the model. The Z matrices should also contain a state for the leaves. If I am not wrong then each tree's Z should be of size `n_nodes` times `n_leaves` of all other trees (to check) (or `n_leaves`$*$`n_nodes` depending on which tree it is). Previously it was `n_internal_nodes` times `n_leaves`.
 - Then the Y state will be `n_leaves * n_leaves` and will be calculated as follows :
