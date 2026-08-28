@@ -1,0 +1,81 @@
+<h1 id="2026-05-13">2026-05-13<a aria-hidden="true" class="anchor-heading icon-link" href="#2026-05-13"></a></h1>
+<h1 id="this-is-marcos-daily-open-notebook">This is Marco's daily open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-marcos-daily-open-notebook"></a></h1>
+<p>Today is 2026.05.13</p>
+<h2 id="meeting-dan-and-pma">Meeting Dan and PMA<a aria-hidden="true" class="anchor-heading icon-link" href="#meeting-dan-and-pma"></a></h2>
+<h3 id="nan-values">NaN values<a aria-hidden="true" class="anchor-heading icon-link" href="#nan-values"></a></h3>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="right"></th><th align="left">structurePerIdRank_is_nan</th><th align="left">isdb_entropy_similarity_is_nan</th><th align="left">gnps_entropy_similarity_is_nan</th><th align="right">count</th><th align="right">pct</th></tr></thead><tbody><tr><td align="right">0</td><td align="left">False</td><td align="left">True</td><td align="left">True</td><td align="right">29607612</td><td align="right">43.52</td></tr><tr><td align="right">1</td><td align="left">True</td><td align="left">True</td><td align="left">False</td><td align="right">28082528</td><td align="right">41.28</td></tr><tr><td align="right">2</td><td align="left">True</td><td align="left">False</td><td align="left">True</td><td align="right">3815892</td><td align="right">5.61</td></tr><tr><td align="right">3</td><td align="left">False</td><td align="left">True</td><td align="left">False</td><td align="right">2664566</td><td align="right">3.92</td></tr><tr><td align="right">4</td><td align="left">False</td><td align="left">False</td><td align="left">False</td><td align="right">1601209</td><td align="right">2.35</td></tr><tr><td align="right">5</td><td align="left">False</td><td align="left">False</td><td align="left">True</td><td align="right">1176478</td><td align="right">1.73</td></tr><tr><td align="right">6</td><td align="left">True</td><td align="left">False</td><td align="left">False</td><td align="right">1089179</td><td align="right">1.6</td></tr></tbody></table></div>
+<h3 id="lda">LDA<a aria-hidden="true" class="anchor-heading icon-link" href="#lda"></a></h3>
+<p>LDA works well but can only work with real values, so we would need to either impute the NaN or only work with the subset that contains no NaN values. </p>
+<h3 id="hist-gradient-boosting">Hist gradient boosting<a aria-hidden="true" class="anchor-heading icon-link" href="#hist-gradient-boosting"></a></h3>
+<p>Can handle NaN values. Trains fast.</p>
+<h3 id="graph">Graph<a aria-hidden="true" class="anchor-heading icon-link" href="#graph"></a></h3>
+<p>Graph based approach is a much more natural way to think of the problem and would naturally allow us to handle NaN values as just missing edges.</p>

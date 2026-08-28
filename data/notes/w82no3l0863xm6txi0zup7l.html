@@ -1,0 +1,30 @@
+<h1 id="week-3">Week 3<a aria-hidden="true" class="anchor-heading icon-link" href="#week-3"></a></h1>
+<h1 id="this-is-marcos-daily-open-notebook">This is Marco's daily open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-marcos-daily-open-notebook"></a></h1>
+<p>Today is 2025.01.24</p>
+<h1 id="updates-from-january">Updates from January<a aria-hidden="true" class="anchor-heading icon-link" href="#updates-from-january"></a></h1>
+<h2 id="markov-random-field">Markov Random Field<a aria-hidden="true" class="anchor-heading icon-link" href="#markov-random-field"></a></h2>
+<p>With Madleina we continued working on the MRF. We are still working on the update of Y. This part is tricky
+because the elements of Y vector are not independent for each dimension. We had to come up
+with a couple of tricks to make it work. Right now it is difficult to create unit tests
+and we might test the model directly with simulations.</p>
+<p><img src="/acol-dws/assets/images/20250122_145406.jpg"></p>
+<h2 id="sirius-database">Sirius database<a aria-hidden="true" class="anchor-heading icon-link" href="#sirius-database"></a></h2>
+<p>This was a simple and quick thing to do. Pascal Pamrein created a database of in-silico reactions
+of molecules in LOTUS with some enzymes-SMARTS. This created a database of about 3 million compounds.
+I converted this database into a database for Sirius 6. We now hope that some of those "synthetic" molecules
+will be present in future mass spec runs. </p>
+<h2 id="cleaning-lotus">Cleaning LOTUS<a aria-hidden="true" class="anchor-heading icon-link" href="#cleaning-lotus"></a></h2>
+<p>Currently trying to find different ways of cleaning up lotus. I have added a filter for single atoms,
+double atoms, and NP-score likeness. This filters about 4% if the compounds.</p>
+<h2 id="species-hammer">Species-hammer<a aria-hidden="true" class="anchor-heading icon-link" href="#species-hammer"></a></h2>
+<p>Since LOTUS is highly biased, Luca told me to parse Pubmed in search of occurences of the molecules in lotus
+and then use this information as a heuristic to estimate the presence of the molecules across the tree of life.
+So far, we have very little data so the output of Hammer will probably be quite bad. </p>
+<h2 id="bachelor-students">Bachelor students<a aria-hidden="true" class="anchor-heading icon-link" href="#bachelor-students"></a></h2>
+<p>In order for the bachelor students to start nicely in February, I have to prepare some material for them: </p>
+<ul>
+<li>I have to look into the molecules availble in the lab to see if we can create our own fake extract.</li>
+<li>I have to look at the different availble NP libraries to see if we there are some more or less cheap ones that we can use.</li>
+<li>I need to continue working on the Monorepo because it would be nice to have a working version for them
+to use so that they can go sample plants using the app.</li>
+</ul>

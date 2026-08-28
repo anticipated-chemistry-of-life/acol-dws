@@ -1,0 +1,23 @@
+<h1 id="week-3">Week 3<a aria-hidden="true" class="anchor-heading icon-link" href="#week-3"></a></h1>
+<h1 id="this-is-marcos-daily-open-notebook">This is Marco's daily open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-marcos-daily-open-notebook"></a></h1>
+<p>Today is 2025.03.21</p>
+<h1 id="week-3-of-march-2025">Week 3 of March 2025<a aria-hidden="true" class="anchor-heading icon-link" href="#week-3-of-march-2025"></a></h1>
+<h2 id="markov-random-field">Markov Random Field<a aria-hidden="true" class="anchor-heading icon-link" href="#markov-random-field"></a></h2>
+<p>This week I mainly worked on the Markov Random Field with Madleina. We were able to debug the simulations and ran the first simulations.</p>
+<h3 id="model-validation">Model validation<a aria-hidden="true" class="anchor-heading icon-link" href="#model-validation"></a></h3>
+<p>To validate our model, we created specific trees. The molecules' tree is a tree containing only roots paired with a leaf. This creates pairs of nodes
+that should be seen as repetitions of samples. We build the species tree in two different ways:</p>
+<ul>
+<li>One tree had one root and only leaves.</li>
+<li>The other tree was a balanced binary tree</li>
+</ul>
+<p>The general idea was that the molecules' tree would contain no information by fixing the branch length of each branch to the same value.
+By doing so, we would be able to approximate the rate matrix <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Λ</mi><mi>c</mi></msub></mrow><annotation encoding="application/x-tex">\Lambda_c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord">Λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span> by summing the number of times a node was 0 given that the root was 0,
+a node was a 1 given that the root was 0, etc...
+For more details see this specific <a href="/acol-dws/./random-markov-field.model-validation.md">section</a>.</p>
+<h3 id="inference-validation">Inference validation<a aria-hidden="true" class="anchor-heading icon-link" href="#inference-validation"></a></h3>
+<p>The next step is to debug inference and see if we are capable of inferring something from the simulated data.</p>
+<ul>
+<li>Simulate a simple tree, by using the same <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">μ</span></span></span></span></span> and branch length for all <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">→</span></span></span></span></span> infer Y or Z and check if they match the true value.</li>
+<li>Read y and Z, fix them and see if we can infer mu and the branch length.</li>
+</ul>

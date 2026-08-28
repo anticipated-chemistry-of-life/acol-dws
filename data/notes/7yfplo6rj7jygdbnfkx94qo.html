@@ -1,0 +1,9 @@
+<h1 id="2026-05-05">2026-05-05<a aria-hidden="true" class="anchor-heading icon-link" href="#2026-05-05"></a></h1>
+<ul>
+<li>In the past months I have explored a couple of approaches for our model to get a probability between spectra and molecules. While exploring I ended a bit in a rabbit hole and I think I need Daniel’s point of view. </li>
+<li>First I checked the different types of NaN values that we had. </li>
+<li>Then I tried LDA but it requires that all the values are not NaNs. </li>
+<li>Then I looked at approaches like GradientBoosting which allow to work NaNs.</li>
+<li>I do get some results however the problem I am facing is that the tools we are using risk to have been trained on the ground truth dataset that I also use as evaluations. </li>
+<li>I have discussed with Luca about this problem and suggested that this problem is a graph and should be treated as such. </li>
+</ul>

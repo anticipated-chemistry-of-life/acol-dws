@@ -1,0 +1,76 @@
+<h1 id="2024-10-14">2024-10-14<a aria-hidden="true" class="anchor-heading icon-link" href="#2024-10-14"></a></h1>
+<h1 id="this-is-marcos-daily-open-notebook">This is Marco's daily open-notebook.<a aria-hidden="true" class="anchor-heading icon-link" href="#this-is-marcos-daily-open-notebook"></a></h1>
+<p>Today is 2024.10.14</p>
+<h2 id="meeting-with-madleina">Meeting with Madleina<a aria-hidden="true" class="anchor-heading icon-link" href="#meeting-with-madleina"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled> start by creatin a script that is able to fetch phylogeny from lotus and molecules</li>
+<li class="task-list-item"><input type="checkbox" disabled> use Cache</li>
+<li class="task-list-item"><input type="checkbox" disabled> for species, get full wikidata taxo, then remove all species with their parent that are not in lotus.</li>
+<li class="task-list-item"><input type="checkbox" disabled> input should be a node and then it will get all the children of that node : Plantae --> all the children of plantae</li>
+<li class="task-list-item"><input type="checkbox" disabled> use that to subset lotus</li>
+</ul>
+<h2 id="notes">Notes<a aria-hidden="true" class="anchor-heading icon-link" href="#notes"></a></h2>
+<p>This is the qlever sparql query to get all the mammals and their parent taxa.</p>
+<pre class="language-sparql"><code class="language-sparql"><span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/prop/direct/<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">rdfs<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.w3.org/2000/01/rdf-schema#<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">wd<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/entity/<span class="token punctuation">></span></span>
+
+<span class="token keyword">SELECT</span> <span class="token variable">?taxon</span> <span class="token variable">?taxon_name</span> <span class="token variable">?taxon_rank</span> <span class="token variable">?taxon_rank_label</span> <span class="token variable">?taxon_parent</span> <span class="token variable">?parent_name</span> <span class="token keyword">WHERE</span> <span class="token punctuation">{</span>
+  <span class="token variable">?taxon</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P225</span></span> <span class="token variable">?taxon_name</span><span class="token punctuation">;</span>
+         <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P105</span></span> <span class="token variable">?taxon_rank</span><span class="token punctuation">;</span>
+         <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P171</span></span>* <span class="token function"><span class="token prefix">wd<span class="token punctuation">:</span></span><span class="token local-name">Q7377</span></span><span class="token punctuation">;</span>      <span class="token comment"># Recursively fetches all taxa with Mammal as an ancestor</span>
+         <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P171</span></span> <span class="token variable">?taxon_parent</span><span class="token punctuation">.</span>
+
+  <span class="token variable">?taxon_rank</span> <span class="token function"><span class="token prefix">rdfs<span class="token punctuation">:</span></span><span class="token local-name">label</span></span> <span class="token variable">?taxon_rank_label</span><span class="token punctuation">.</span>
+  <span class="token keyword">FILTER</span> <span class="token punctuation">(</span><span class="token keyword">lang</span><span class="token punctuation">(</span><span class="token variable">?taxon_rank_label</span><span class="token punctuation">)</span> = <span class="token string">"en"</span><span class="token punctuation">)</span>
+  <span class="token keyword">FILTER</span> <span class="token punctuation">(</span><span class="token variable">?taxon_rank</span> != <span class="token function"><span class="token prefix">wd<span class="token punctuation">:</span></span><span class="token local-name">Q68947</span></span><span class="token punctuation">)</span>  <span class="token comment"># Exclude taxa with rank "subspecies"</span>
+
+  <span class="token variable">?taxon_parent</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P225</span></span> <span class="token variable">?parent_name</span><span class="token punctuation">.</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This is a nice query because we can then create a function that will fetch all the children of a node. We will use the Mammal for testing our model as they are not too many. </p>
+<p>What I need to do then is to create a function that given a root node, will return all the children (with the option of filtering the sub-species). It should also be able to not rerun the full function if the query and the output of that query is already in the cache.</p>
+<p>This query : </p>
+<pre class="language-sparql"><code class="language-sparql"><span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/prop/direct/<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">p<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/prop/<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">ps<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/prop/statement/<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">pr<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/prop/reference/<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">rdfs<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.w3.org/2000/01/rdf-schema#<span class="token punctuation">></span></span>
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">wd<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.wikidata.org/entity/<span class="token punctuation">></span></span>
+
+<span class="token keyword">PREFIX</span> <span class="token function"><span class="token prefix">prov<span class="token punctuation">:</span></span></span> <span class="token url"><span class="token punctuation">&#x3C;</span>http://www.w3.org/ns/prov#<span class="token punctuation">></span></span>
+<span class="token keyword">SELECT</span> <span class="token keyword">DISTINCT</span> <span class="token variable">?structure</span> <span class="token variable">?structure_inchikey</span> <span class="token variable">?taxon</span> <span class="token variable">?taxon_name</span> <span class="token variable">?reference</span> <span class="token variable">?reference_doi</span> <span class="token variable">?taxon_rank</span> <span class="token variable">?taxon_rank_label</span> <span class="token variable">?taxon_parent</span> <span class="token variable">?parent_name</span> <span class="token keyword">WHERE</span> <span class="token punctuation">{</span>
+  <span class="token variable">?structure</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P235</span></span> <span class="token variable">?structure_inchikey</span><span class="token punctuation">;</span>  <span class="token comment"># get the inchikey</span>
+    <span class="token function"><span class="token prefix">p<span class="token punctuation">:</span></span><span class="token local-name">P703</span></span> <span class="token variable">?taxon_statement</span><span class="token punctuation">.</span>                <span class="token comment"># find the statement node</span>
+  
+  <span class="token variable">?taxon_statement</span> <span class="token function"><span class="token prefix">ps<span class="token punctuation">:</span></span><span class="token local-name">P703</span></span> <span class="token variable">?taxon</span><span class="token punctuation">.</span>          <span class="token comment"># get the taxon from the statement node</span>
+  <span class="token variable">?taxon_statement</span> <span class="token function"><span class="token prefix">prov<span class="token punctuation">:</span></span><span class="token local-name">wasDerivedFrom</span></span> <span class="token variable">?ref_node</span><span class="token punctuation">.</span> <span class="token comment"># get the reference node from the statement node</span>
+  <span class="token variable">?ref_node</span> <span class="token function"><span class="token prefix">pr<span class="token punctuation">:</span></span><span class="token local-name">P248</span></span> <span class="token variable">?reference</span><span class="token punctuation">.</span>             <span class="token comment"># get the reference item</span>
+
+  <span class="token variable">?taxon</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P225</span></span> <span class="token variable">?taxon_name</span><span class="token punctuation">;</span>              <span class="token comment"># get the taxon scientific name</span>
+         <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P105</span></span> <span class="token variable">?taxon_rank</span><span class="token punctuation">;</span>              <span class="token comment"># get the taxon rank</span>
+         <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P171</span></span>* <span class="token function"><span class="token prefix">wd<span class="token punctuation">:</span></span><span class="token local-name">Q21730</span></span><span class="token punctuation">;</span>                <span class="token comment"># recursively fetch all taxa with Asterales as an ancestor</span>
+         <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P171</span></span> <span class="token variable">?taxon_parent</span><span class="token punctuation">.</span>            <span class="token comment"># get the taxon's immediate parent</span>
+
+  <span class="token variable">?taxon_rank</span> <span class="token function"><span class="token prefix">rdfs<span class="token punctuation">:</span></span><span class="token local-name">label</span></span> <span class="token variable">?taxon_rank_label</span><span class="token punctuation">.</span>
+  <span class="token keyword">FILTER</span> <span class="token punctuation">(</span><span class="token keyword">lang</span><span class="token punctuation">(</span><span class="token variable">?taxon_rank_label</span><span class="token punctuation">)</span> = <span class="token string">"en"</span><span class="token punctuation">)</span>
+  <span class="token keyword">FILTER</span> <span class="token punctuation">(</span><span class="token variable">?taxon_rank</span> != <span class="token function"><span class="token prefix">wd<span class="token punctuation">:</span></span><span class="token local-name">Q68947</span></span><span class="token punctuation">)</span>         <span class="token comment"># exclude taxa with rank "subspecies"</span>
+
+  <span class="token variable">?taxon_parent</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P225</span></span> <span class="token variable">?parent_name</span><span class="token punctuation">.</span>      <span class="token comment"># get the parent taxon's scientific name</span>
+  <span class="token variable">?reference</span> <span class="token function"><span class="token prefix">wdt<span class="token punctuation">:</span></span><span class="token local-name">P356</span></span> <span class="token variable">?reference_doi</span><span class="token punctuation">.</span>       <span class="token comment"># get the reference DOI</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Will get all the molecules that are associated with any taxon that is a child of Asterales. This is also very useful to quickly get all the molecules associated with a taxon.</p>
+<h2 id="todo-today">Todo today<a aria-hidden="true" class="anchor-heading icon-link" href="#todo-today"></a></h2>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled></li>
+</ul>
+<h2 id="doing">Doing<a aria-hidden="true" class="anchor-heading icon-link" href="#doing"></a></h2>
+<h2 id="done">Done<a aria-hidden="true" class="anchor-heading icon-link" href="#done"></a></h2>
+<ul>
+<li></li>
+</ul>
+<h2 id="todo-tomorrow">Todo tomorrow<a aria-hidden="true" class="anchor-heading icon-link" href="#todo-tomorrow"></a></h2>
+<ul>
+<li>[ ]</li>
+</ul>
